@@ -1,0 +1,38 @@
+
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "GUID-AQUI",
+  "packageName": "WizdeskTeams",
+  "developer": {
+    "name": "ITW",
+    "websiteUrl": "https://wizco.topdesk.net/",
+    "privacyUrl": "https://wizco.topdesk.net/",
+    "termsOfUseUrl": "https://wizco.topdesk.net/"
+  },
+  "name": {
+    "short": "Wizdesk",
+    "full": "WizdeskTeams"
+  },
+  "description": {
+    "short": "Atalho do Wizdesk no Teams",
+    "full": "Atalho para acesso ao Wizdesk pelo teams"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "sitePersonalizado",
+      "name": "Wizdesk",
+      "contentUrl": "https://wizco.topdesk.net/",
+      "websiteUrl": "https://wizco.topdesk.net/",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["seudominio.com"]
+}
